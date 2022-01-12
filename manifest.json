@@ -1,0 +1,31 @@
+{
+
+    "manifest_version": 2,
+    "name": "CAPSLOCK",
+    "version": "1.0",
+  
+    "description": "CHANGE LES CARACTERES EN MAJUSCULE",
+  
+    "icons": {
+      "48": "ICON.png"
+    },
+  
+    "permissions": [
+      "activeTab"
+  ],
+  "browser_action": {
+      "default_icon": "ICON.png",
+      "default_title": "CAPSLOCK"
+  },
+
+
+    "content_scripts": [
+      {
+        "matches": ["*://*.mozilla.org/*"],
+        "js": ["extension.js"]
+      }
+    ]
+  
+ 
+  }
+
